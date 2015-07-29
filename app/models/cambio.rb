@@ -16,6 +16,8 @@ class Cambio < ActiveRecord::Base
       Cambio.current_peso_dolar
     elsif money =="eur"
       Cambio.current_peso_euro
+    elsif money =="usd_eur"
+      Cambio.current_dolar_euro
     end
   end
 
