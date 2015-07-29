@@ -30,5 +30,9 @@ class Cambio < ActiveRecord::Base
     category = CategoriaCambio.peso_euro
     category.cambios.parent_id.no_bsp
   end
-
+  
+  def self.current_dolar_euro
+    category = CategoriaCambio.dolar_euro
+    category.cambios.parent_id.no_bsp
+  end
 end
